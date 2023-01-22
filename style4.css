@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+@import url('https://fonts.gooogleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;  
+  overflow: hidden;
+
+}
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+
+  border-radius: 18px;
+  background: #fb2274;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+  
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.card-image {
+  grid-area: image;
+  background: url("images/img1.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 25px;
+}
+.card-text .date {
+  color: #000;
+  font-size:20px;
+  
+
+}
+.card-text p {
+  color:#fff;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  color: #fff;
+  font-size:28px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+/*card2*/
+.card-image.card2 {
+  background: url("images/img2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*card3*/
+.card-image.card3 {
+  background: url("images/img3.jpg");
+  background-size: cover;
+  background-position: center;
+}
